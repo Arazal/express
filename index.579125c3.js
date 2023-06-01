@@ -96,5 +96,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+const navLinks = document.querySelectorAll("nav a");
+// Loop through each link and add an event listener
+navLinks.forEach((link)=>{
+    link.addEventListener("click", function(event) {
+        // Remove the 'active' class from all links
+        navLinks.forEach((navLink)=>{
+            navLink.classList.remove("active");
+        });
+        // Add the 'active' class to the clicked link
+        link.classList.add("active");
+    });
+});
 
 //# sourceMappingURL=index.579125c3.js.map

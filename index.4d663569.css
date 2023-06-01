@@ -77,15 +77,43 @@ input, select {
   vertical-align: middle;
 }
 
-.home:hover, .about:hover, .contact:hover {
-  background-color: #c62324;
-}
-
 h1 {
   color: #c62324;
   z-index: 1;
   font-size: 3em;
   font-weight: 400;
+}
+
+@keyframes textFadeIn {
+  0% {
+    color: #0000;
+  }
+
+  50% {
+    color: #c62324;
+  }
+
+  100% {
+    color: #000;
+  }
+}
+
+.dipingxian {
+  animation: 3s ease-in-out textFadeIn;
+}
+
+.home:hover, .about:hover, .contact:hover {
+  background-color: #c62324;
+}
+
+.link {
+  color: #000;
+  background-color: #0000;
+}
+
+.link.active {
+  color: #fff;
+  background-color: #c62324;
 }
 
 body {
