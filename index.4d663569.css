@@ -84,6 +84,7 @@ input, select {
 
   50% {
     color: #c62324;
+    scale: 1.5;
   }
 
   100% {
@@ -189,7 +190,7 @@ body {
 }
 
 .right:hover {
-  transform: scale(1.5)translate(-30%);
+  transform: scale(1.5)translate(-40%);
 }
 
 .left {
@@ -199,7 +200,7 @@ body {
 }
 
 .left:hover {
-  transform: scale(1.5)translate(30%);
+  transform: scale(1.5)translate(40%);
 }
 
 .featured-image-container .card {
@@ -223,6 +224,16 @@ img {
   opacity: 0;
   visibility: hidden;
   will-change: transform, opacity;
+  font-family: Geologica, sans-serif;
+}
+
+.hero-text {
+  color: #c62324;
+  animation-name: textFadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
 }
 
 @media screen and (width >= 601px) and (width <= 1024px) {
