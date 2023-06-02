@@ -182,6 +182,26 @@ body {
   box-shadow: 1px 1px 5px 1px #ccc;
 }
 
+.right {
+  transition-property: transform, translate;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.right:hover {
+  transform: scale(1.5)translate(-30%);
+}
+
+.left {
+  transition-property: transform, translate;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.left:hover {
+  transform: scale(1.5)translate(30%);
+}
+
 .featured-image-container .card {
   height: 0;
   padding: 10px 10px calc(100% - 10px);
