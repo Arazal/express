@@ -205,4 +205,24 @@ img {
   will-change: transform, opacity;
 }
 
+@media screen and (width >= 601px) and (width <= 1024px) {
+  @keyframes textFadeIn {
+    0% {
+      color: #0000;
+    }
+
+    50% {
+      color: #c62324;
+    }
+
+    100% {
+      color: green;
+    }
+  }
+
+  .dipingxian {
+    animation: 3s ease-in-out textFadeIn;
+  }
+}
+
 /*# sourceMappingURL=index.4d663569.css.map */
