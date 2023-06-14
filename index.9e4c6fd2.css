@@ -1,0 +1,22 @@
+.grid-container {
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "a b c d"
+                       "f e g h"
+                       "i e j k"
+                       "l e m n"
+                       "o e p q";
+  display: grid;
+}
+
+.grid-container .cell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.win-win h2:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
