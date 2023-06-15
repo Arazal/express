@@ -9,7 +9,7 @@ const path2 = document.getElementById("path2");
 const path3 = document.getElementById("path3");
 const path4 = document.getElementById("path4");
 gsap.to(plane1, {
-    delay: 3,
+    delay: 1,
     duration: 72,
     repeat: -1,
     repeatDelay: 5,
@@ -28,7 +28,7 @@ gsap.to(plane1, {
 });
 gsap.to(plane2, {
     delay: 6,
-    duration: 72,
+    duration: 78,
     repeat: -1,
     repeatDelay: 5,
     //   yoyo: true,
@@ -46,7 +46,7 @@ gsap.to(plane2, {
 });
 gsap.to(plane3, {
     delay: 9,
-    duration: 72,
+    duration: 82,
     repeat: -1,
     repeatDelay: 5,
     //   yoyo: true,
@@ -64,7 +64,7 @@ gsap.to(plane3, {
 });
 gsap.to(plane4, {
     delay: 12,
-    duration: 72,
+    duration: 92,
     repeat: -1,
     repeatDelay: 5,
     //   yoyo: true,
@@ -84,7 +84,7 @@ const li = document.querySelectorAll("core-features");
 gsap.from(".core-features", {
     opacity: 0,
     duration: 2,
-    repeat: -1,
+    //   repeat: -1,
     y: -50,
     stagger: 0.5,
     ease: "Bounce.easeOut",
